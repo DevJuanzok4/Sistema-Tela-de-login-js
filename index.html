@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+    </style>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/kollektif');
+    </style>
+
+</head>
+
+<body>
+    <div id="k">
+        <img id="logo" src="atlas.png" alt="">
+    </div>
+
+    <br>
+
+    <form>
+        <center>
+            <big>
+                <h1 id="texto">Login</h1>
+            </big>
+        </center>
+
+        <br>
+        <input type="text" placeholder="Usuário" name="" id="login">
+        <input type="password" name="Senha" placeholder="Senha" id="senha">
+
+
+        <input type="submit" placeholder="Entrar" onclick="Logar();return false">
+        <a href="#">
+            <h5>Esqueci minha senha</h5>
+        </a>
+        <br>
+    </form>
+
+    <script>
+        function Logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            if (login == "freefire123" && senha == "reidaawm") {
+                alert('Sucesso')
+                location.href = "https://hoodshoop.com.br/";
+            } else {
+                alert('Usuário ou Senha incorretos')
+            }
+        }
+    </script>
+    <hr>
+    <center>
+        <small>By Atlantis</small>
+    </center>
+</body>
+
+</html>
